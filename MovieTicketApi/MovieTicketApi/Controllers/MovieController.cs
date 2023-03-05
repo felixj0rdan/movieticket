@@ -41,7 +41,7 @@ namespace MovieTicketApi.Controllers
 		}
 
         [HttpGet("get-all")]
-        public ActionResult<List<MovieModel>> GetAllMovies()
+        public ActionResult<IEnumerable<MovieModel>> GetAllMovies()
         {
             return movieRepository.GetAll();
         }

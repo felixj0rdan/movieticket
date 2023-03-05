@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "/Users/felixjordan/Desktop/training/movieticketapp/MovieTicketApi/MovieTicketApi/MovieTicketApi.csproj": {}
+    "D:\\felix\\movieticket\\MovieTicketApi\\MovieTicketApi\\MovieTicketApi.csproj": {}
   },
   "projects": {
-    "/Users/felixjordan/Desktop/training/movieticketapp/MovieTicketApi/MovieTicketApi/MovieTicketApi.csproj": {
+    "D:\\felix\\movieticket\\MovieTicketApi\\MovieTicketApi\\MovieTicketApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/felixjordan/Desktop/training/movieticketapp/MovieTicketApi/MovieTicketApi/MovieTicketApi.csproj",
+        "projectUniqueName": "D:\\felix\\movieticket\\MovieTicketApi\\MovieTicketApi\\MovieTicketApi.csproj",
         "projectName": "MovieTicketApi",
-        "projectPath": "/Users/felixjordan/Desktop/training/movieticketapp/MovieTicketApi/MovieTicketApi/MovieTicketApi.csproj",
-        "packagesPath": "/Users/felixjordan/.nuget/packages/",
-        "outputPath": "/Users/felixjordan/Desktop/training/movieticketapp/MovieTicketApi/MovieTicketApi/obj/",
+        "projectPath": "D:\\felix\\movieticket\\MovieTicketApi\\MovieTicketApi\\MovieTicketApi.csproj",
+        "packagesPath": "C:\\Users\\sivat\\.nuget\\packages\\",
+        "outputPath": "D:\\felix\\movieticket\\MovieTicketApi\\MovieTicketApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/felixjordan/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\sivat\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -54,6 +56,10 @@
               "target": "Package",
               "version": "[2.19.0, )"
             },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.3, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -82,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.200/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

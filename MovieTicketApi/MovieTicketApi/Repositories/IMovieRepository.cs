@@ -11,7 +11,6 @@ namespace MovieTicketApi.Repositories
         public void Delete(String id);
         public void Update(MovieModel movie, string id);
         public MovieModel GetByName(string name);
-
     }
 }
 

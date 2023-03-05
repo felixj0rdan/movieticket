@@ -11,6 +11,10 @@ namespace MovieTicketApi.Repositories
 	{
         private readonly IMongoCollection<MovieModel> movieCollection;
 
+        public MovieRepository()
+        {
+        }
+
         public MovieRepository(IOptions<MongoDBSettings> mongoDBSettings)
         {
             //          MongoClient client = new MongoClient(mongoDBSettings.Value.ConnectionURI);
@@ -67,7 +71,15 @@ namespace MovieTicketApi.Repositories
         public List<MovieModel> GetAll()
         {
             //throw new NotImplementedException();
+            try
+            {
             return movieCollection.Find(_ => true).ToList();
+
+            } catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return null;
+            }
         }
 
         public MovieModel GetById(string id)
