@@ -34,19 +34,19 @@ namespace TestMovieTicket
 
 
             List<MovieModel> data = new List<MovieModel> { new MovieModel() {
-                                                                                ID= "64007818fe7b41a43a714263",
                                                                                 Name= "Avengers",
-                                                                                Description= "Avengers",
                                                                                 Duration= 0,
                                                                                 Genre= "action",
                                                                                 Rating= 3.4,
+                                                                                ID= "64007818fe7b41a43a714263",
+                                                                                Description= "Avengers",
                                                                                 ImageURL= "https://i.pinimg.com/564x/12/53/39/1253398987589547c82173327c082339.jpg",
                                                                                 AvailaibleTickets= 123
                                                                               },
                                                                  new MovieModel() {
-                                                                                ID= "64007818fe7b41a43a714253",
                                                                                 Name= "Avengers1",
                                                                                 Description= "Avengers",
+                                                                                ID= "64007818fe7b41a43a714253",
                                                                                 Duration= 0,
                                                                                 Genre= "action",
                                                                                 Rating= 3.4,
@@ -58,7 +58,7 @@ namespace TestMovieTicket
 
             MovieController movieController = new MovieController(_movieRepository.Object);
             var list = movieController.GetAllMovies();
-            ActionResult<IEnumerable<MovieModel>> expected = (ActionResult<IEnumerable<MovieModel>>)data;
+            ActionResult<List<MovieModel>> expected = (ActionResult<List<MovieModel>>)data;
             Assert.That(list.ToBson(), Is.EqualTo(expected.ToBson()));
 
         }

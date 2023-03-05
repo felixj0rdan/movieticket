@@ -32,7 +32,7 @@ namespace TestMovieTicket
             } ;
 
             UserController userController = new UserController(userRepository.Object, tokenService.Object);
-            tokenService.Setup(t => t.GenerateToken()).Returns("")
+           // tokenService.Setup(t => t.GenerateToken()).Returns("")
             Assert.Pass();
         }
     }
